@@ -1,0 +1,25 @@
+stuff to add in the future maybe
+
+1. improve getting the time between places faster (maybe later technially done)
+    currently everytime you switch between places it freezes cause it needs to get the info to update, this will be a problem when updating 
+    the clock in real time. 
+
+    Instead, when you first get the time it should be normal
+    Then, you record what the timezone is so in the future you just add the number of hours onto the time already such that itll be faster
+    (theoretically speaking i dunno if that actaully is faster)
+
+2. Save the cities that have already been added to the app before (DONE)
+    make a save file and write the required info into it when a city had been added
+
+3. figure out how to remove an item in the jcombobox (DONE)
+    removeItem() is acting very strangly, make a new file and test out how to remove an item from there (DONE)
+
+4. change background picture gradually (DONE)
+    find a way to change its opacity 
+    function "changeTime" in timeDisplayer should give out a true or false whether it is day or night, this should also go to get time as well
+    then in the actionlistener e.getsource() region, add an if statement to check if changeTime said if it if day or night, better than constantly monitoring it on the while true loop
+
+5. format the json file better/switch to something like gson for that
+    I cant read that json file bro
+
+6. implement daylight savings
