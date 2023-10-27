@@ -18,6 +18,7 @@ public class Main {
         //     // TODO Auto-generated catch block
         //     System.out.println(":whoops");
         // }
+        //test this here
         try {
             new Window();
             System.out.println("good done");
