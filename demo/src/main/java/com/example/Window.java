@@ -44,7 +44,7 @@ class Window extends JFrame implements ActionListener, WindowListener{
 
         this.setLayout(null);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        this.setPreferredSize(new Dimension(1000, 750));
+        this.setPreferredSize(new Dimension(1000, 797));
         this.addWindowListener(this);
         timeDisplayer = new TimeDisplayer();
 
@@ -62,7 +62,7 @@ class Window extends JFrame implements ActionListener, WindowListener{
         options = new JComboBox<Place>(); //declaring options box to hold place
         options.addItem(new Place ("Toronto","Canada",43.651070, -79.347015,"CA"));
         options.addItem(new Place ("London", "England", 51.509865, -0.118092,"GB"));
-        options.addItem(new Place("Washington D.C", "USA", 38.9072, 77.0369, "US"));
+        options.addItem(new Place("Washington D.C", "USA", 38.9072, -77.0369, "US"));
         options.setSize(new Dimension(400, 50));
         options.addActionListener(this);
         northPanel.add(options);

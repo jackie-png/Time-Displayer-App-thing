@@ -45,7 +45,7 @@ class Background extends JPanel{
 
     private void loadImages(){
         try {
-            timeBackground[0] = ImageIO.read(getClass().getResource("Day Dev v2.png"));
+            timeBackground[0] = ImageIO.read(getClass().getResource("Time_Background_Day1.png"));
             timeBackground[1] = ImageIO.read(getClass().getResource("Night Dev V2.png"));
 
         } catch (IOException e) {
