@@ -104,10 +104,10 @@ class Window extends JFrame implements ActionListener, WindowListener{
 
     @Override
     public void actionPerformed(ActionEvent e){
-        System.out.println(backgrd.opacity);
-        System.out.println(isNight);
-        System.out.println("opacity time: "+opacityTime.isRunning());
-        System.out.println("minite time: "+ minute.isRunning());
+        //System.out.println(backgrd.opacity);
+        //System.out.println(isNight);
+        //System.out.println("opacity time: "+opacityTime.isRunning());
+        //System.out.println("minite time: "+ minute.isRunning());
         if (isNight == false && opacityTime.isRunning()){
             backgrd.opacity+=0.035f;
             if(backgrd.opacity >= 1.0f){
@@ -208,7 +208,7 @@ class Window extends JFrame implements ActionListener, WindowListener{
     }
 
     private void handleMinute(){
-        System.out.println(timeDisplayer.timeText.getText());
+        //System.out.println(timeDisplayer.timeText.getText());
         if (LocalTime.now().getMinute() > start && (!timeDisplayer.timeText.getText().equals("Time placed here"))){
             timeDisplayer.changeTime();
             System.out.println(timeDisplayer.time[1]);

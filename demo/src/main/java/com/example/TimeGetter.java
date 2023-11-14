@@ -123,13 +123,12 @@ public class TimeGetter {
             timezoneScanner.close();
             
             //returns the time and the timezone ---> (time,timzone)
+            System.out.println(timezoneInitial);
 
-            if (timezoneInitial == 1){ //if the timezone is in UTC then it should be just UTC +0
-                return timeNeeded.get("time").toString() + ",+0"; 
-            } else if (timezoneInitial < 0){//if the time zone is behind UTC +0 then leave it as it is
-                return timeNeeded.get("time").toString() + "," + timezoneInitial;
-            } else { // otherwise subtract 1
-                return timeNeeded.get("time").toString() + ",+" + (timezoneInitial-1);
+            if (timezoneInitial >= 0){
+                return timeNeeded.get("time").toString() + ", +" + timezoneInitial;
+            } else {
+                return timeNeeded.get("time").toString() + ", " + timezoneInitial;
             }
         } catch (Exception e){
             return "error, time";
