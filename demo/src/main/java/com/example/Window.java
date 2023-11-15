@@ -4,6 +4,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.Timer;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 
@@ -13,6 +14,7 @@ import org.omg.CORBA.DATA_CONVERSION;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
@@ -43,6 +45,8 @@ class Window extends JFrame implements ActionListener, WindowListener{
     Window() throws MalformedURLException, IOException, ParseException{
 
         this.setLayout(null);
+        this.setTitle("Time Around The World");
+        this.setIconImage((new ImageIcon("demo\\src\\main\\java\\com\\example\\Time_Icon.png")).getImage());
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.setPreferredSize(new Dimension(1000, 797));
         this.addWindowListener(this);
