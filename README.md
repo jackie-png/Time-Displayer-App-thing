@@ -3,6 +3,9 @@
  
  Written in Java, UI created with Java's Swing library
 
+## To Download and Run
+ Download the zip file and open it as a project on any java IDE like VScode, then run the program
+
 ## Timegetter
  This is responsible for retrieving a city's latitiude and longitude and retirving the time of that place as well
 
